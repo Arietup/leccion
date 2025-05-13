@@ -1,19 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
-import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
-
-import { HomePageRoutingModule } from './home-routing.module';
-
+import { ProgrammaticFocusComponent } from '../components/programmatic-focus/programmatic-focus.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    HomePageRoutingModule
-  ],
-  declarations: [HomePage]
+  declarations: [HomePage, ProgrammaticFocusComponent], // Asegúrate que el componente esté declarado aquí
+  imports: [IonicModule]
 })
 export class HomePageModule {}
